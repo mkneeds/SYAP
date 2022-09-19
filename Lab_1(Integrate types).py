@@ -1,4 +1,4 @@
-import json
+
 
 def searchGregory(number):
     pi = 0
@@ -103,10 +103,9 @@ def getCount():
                     break
 def getFull():
     for name in response:
-        _count = 1
+        _count = 0
         _check = 0
         print(f"{_count}.Название товара -> {name}")
-        _count += 1
         for st in response[name]:
             for i in st:
                 if _check == 0:
@@ -116,6 +115,7 @@ def getFull():
                 if _check == 2:
                     print(f"Цена товара->{i}")
                 _check += 1
+        _count += 1
 
 def buyProduct():
     _count = 0
