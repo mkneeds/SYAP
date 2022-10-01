@@ -1,3 +1,6 @@
+import codecs
+import json
+
 def create_file():
     f = open('D:\SYAP\Laba','a')
     str = " "
@@ -42,14 +45,73 @@ def read_cinema():
             maxs = int(stok[3])
             str = stok
     print(f"Самый посещаемый фильм ->{str}")
+    f.close()
+
+def create_dict():
+    f = open('D:\SYAP\Hour','r',encoding = 'utf-8')
+    my_dict = {}
+    for text in f:
+        i = 0
+        sum = 0
+        stok = text.split()
+        for k in stok:
+            i += 1
+            if i == 2 or i == 3 or i == 4:
+                try:
+                    sum = sum + int(k.replace("(л)",''))
+                except:
+                    try:
+                        sum = sum + int(k.replace("(пр)", ''))
+                    except:
+                        sum = sum + int(k.replace("(лаб)", ''))
+
+        my_dict[stok[0]] = sum
+    print(my_dict)
+
+def json_company():
+        with codecs.open('D:\SYAP\componis', 'r', 'utf_8_sig') as F, codecs.open('JSON.json', 'w', 'utf_8_sig') as java:
+            profit = {}
+            average = {}
+            spisok = []
+            lines = 0
+            average_profit = 0
+            for line in F:
+                lines += 1
+                line = line.split()
+                price = 0
+                sch = 1
+                for i in line:
+                    if i.isalpha() and i.isupper() == False:
+                        key = i
+                    if i.isdigit():
+                        if sch % 2 == 1:
+                            price += int(i)
+                            sch += 1
+                        else:
+                            price -= int(i)
+                average_profit += price
+                profit.update({key: price})
+            average.update({'Средняя прибыль': average_profit / lines})
+            spisok.append(profit)
+            spisok.append(average)
+            print(spisok)
+            json.dump(spisok, java)
+
 
 def main():
     # print("Первое задание:")
     # create_file()
     # open_file()
     # print("---------------------------------------------------------")
-    print("Второе задание:")
-    read_cinema()
+    # print("Второе задание:")
+    # read_cinema()
+    # print("Третье задание:")
+    # create_dict()
+    print("Четвёртое задание:")
+    json_company()
+
+
+
 
 
 if __name__ == "__main__":
