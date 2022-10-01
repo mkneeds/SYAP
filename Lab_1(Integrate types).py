@@ -1,5 +1,4 @@
 
-
 def searchGregory(number):
     pi = 0
     for i in range(number):
@@ -9,8 +8,8 @@ def searchGregory(number):
 def searchVD(str):
     count_VO = 0
     count_CON = 0
-    vowels_EU = set("aeiou")
-    vowels_RU = set("Ауоыиэяюёе")
+    vowels_EU = set("aeiouAEIOU")
+    vowels_RU = set("АуоыиэяюёеаУОЫИЭЯЮЁ")
 
     for letter in str:
         if letter in vowels_EU or letter in vowels_RU:
@@ -162,6 +161,7 @@ def buyProduct():
 
                 flag += 1
         if flag_b:
+            print("Покупка прошла успешна!")
             new_response.setdefault(arr[c_product], [])
             new_response[arr[c_product]].append(new_opr)
             response.update(new_response)

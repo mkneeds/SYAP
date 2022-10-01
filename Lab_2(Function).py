@@ -1,7 +1,6 @@
 try:
     from collections import OrderedDict
     import random
-
 except:
     print("Библиотека не врубилась")
 
@@ -83,8 +82,9 @@ def sumMatr():
     s = 0
     i = 0
     j = 0
-    for j in range(col):
-        for i in range(str):
+    sum = 0
+    for i in range(col):
+        for j in range(str):
             if arr[i][j] > 0:
                 k += 1
             else:
@@ -92,10 +92,13 @@ def sumMatr():
                 break
             if k == col:
                 s = i
+                for j in range(col):
+                    sum += arr[i][j]
                 break
-    sum = 0
-    for j in range(col):
-            sum += arr[s][j]
+    # for j in range(col):
+    #
+    #     sum += arr[s][j]
+
     print(f"Строка под номером ->{s+1} содержит все положительные элементы. Сумма их равна ->{sum}")
 def main():
     is_prime(5)
@@ -108,3 +111,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
