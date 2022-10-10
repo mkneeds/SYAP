@@ -1,1 +1,1 @@
-<sub><sup>combining the two tags</sup></sub>
+<H1>combining the two tags</H1>
