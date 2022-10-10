@@ -1,19 +1,22 @@
-import codecs
-import json
+try:
+    import codecs
+    import json
+except:
+    print("Import Error")
+
 
 def create_file():
     f = open('D:\SYAP\Laba','a')
     str = " "
     while str != "":
-        flag = True
         str = input("Введите слово которое хотите записать в файл\n")
         if str != "":
             f.write(str + '\n')
     f.close()
 def open_file():
+    create_file()
     f = open('D:\SYAP\Laba', 'r')
     z = open('D:\SYAP\Laba_@','w')
-    str = ""
     max_count = 0
     max_word = ""
     for strop in f.readlines():
@@ -67,6 +70,7 @@ def create_dict():
 
         my_dict[stok[0]] = sum
     print(my_dict)
+    f.close()
 
 def json_company():
         with codecs.open('D:\SYAP\componis', 'r', 'utf_8_sig') as F, codecs.open('JSON.json', 'w', 'utf_8_sig') as java:
@@ -99,20 +103,15 @@ def json_company():
 
 
 def main():
-    # print("Первое задание:")
-    # create_file()
-    # open_file()
-    # print("---------------------------------------------------------")
-    # print("Второе задание:")
-    # read_cinema()
-    # print("Третье задание:")
-    # create_dict()
+    print("Первое задание:")
+    open_file()
+    print("---------------------------------------------------------")
+    print("Второе задание:")
+    read_cinema()
+    print("Третье задание:")
+    create_dict()
     print("Четвёртое задание:")
     json_company()
-
-
-
-
 
 if __name__ == "__main__":
     main()
