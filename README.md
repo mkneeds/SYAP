@@ -1,1 +1,2 @@
-<H1>combining the two tags</H1>
+<H1>BSUIR</H1>
+<H1>Лабараторные по предмету "СЯП"</H1>
