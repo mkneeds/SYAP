@@ -1,7 +1,7 @@
-import matplotlib.pyplot as plt
+import matchcaselib
 from numpy import arccos, sqrt, pi, sin, log10, mean
-import matplotlib
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def task_1(x, a):
@@ -96,6 +96,73 @@ def task_3(x, c):
 
 def task_4():
     ax = plt.subplots()
+
+def task_4():
+    def first_function(a, b):
+        return a ** 0.25 - b ** 0.25
+
+    def second_function(a, b):
+        return a ** 2 - b ** 2
+
+    def third_function(a, b):
+        return 2 * a + 3 * b
+
+    def fourth_function(a, b):
+        return a ** 2 + b ** 2
+
+    def fifth_function(a, b):
+        return 2 + 2 * a + 2 * b + a ** 2 - b ** 2
+
+    def print_menu():
+        print("\n 1 | x^0.25 + y^0.25"
+              "\n 2 | x^2 - y^2"
+              "\n 3 | 2x + 3y"
+              "\n 4 | x^2 + y^2"
+              "\n 5 | 2 + 2x + 2y - x^2 - y^2"
+              "\n 6 | Выход")
+
+    while True:
+        print_menu()
+        try:
+            x = np.linspace(-50, 50)
+            y = np.linspace(-50, 50)
+
+            X, Y = np.meshgrid(x, y)
+
+            while True:
+                user_choice = int(input("Выберите функцию -> "))
+                if 6 < user_choice < 1:
+                    raise ValueError
+
+                with matchcaselib.match(user_choice) as m:
+                    if m.case(1):
+                        x = np.linspace(0, 50)
+                        y = np.linspace(0, 50)
+
+                        A, B = np.meshgrid(x, y)
+                        Z = first_function(A, B)
+                        break
+                    if m.case(2):
+                        Z = second_function(X, Y)
+                        break
+                    if m.case(3):
+                        Z = third_function(X, Y)
+                        break
+                    if m.case(4):
+                        Z = fourth_function(X, Y)
+                        break
+                    if m.case(5):
+                        Z = fifth_function(X, Y)
+                        break
+                    if m.case(6):
+                        print("До свидания!")
+                        exit(0)
+            ax = plt.axes(projection='3d')
+            ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
+                            cmap='viridis')
+            plt.show()
+        except ValueError:
+            print("Некорректный ввод!")
 
 
 def main():

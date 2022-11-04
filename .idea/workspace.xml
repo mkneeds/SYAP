@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fea58b8a-7813-421e-b267-85201a78b2bf" name="Changes" comment="LAB_4" />
+    <list default="true" id="fea58b8a-7813-421e-b267-85201a78b2bf" name="Changes" comment="LAB">
+      <change beforePath="$PROJECT_DIR$/.idea/SYAP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SYAP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665423373296</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="LAB_4">
+      <created>1667586836875</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667586836875</updated>
+    </task>
+    <task id="LOCAL-00009" summary="LAB">
+      <created>1667586857656</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667586857656</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +299,7 @@
     <MESSAGE value="LAB_2" />
     <MESSAGE value="LAB_3" />
     <MESSAGE value="LAB_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="LAB_4" />
+    <MESSAGE value="LAB" />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB" />
   </component>
 </project>
