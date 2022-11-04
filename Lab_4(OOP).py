@@ -515,7 +515,8 @@ def main():
     frame = Frame(root, width=740, height=90, bg='#f2ffe0')
     frame.place(x=30, y=5)
     text = Label(root, text='''Make by KiRa....
-    Скорость менять на клавише + и -''',
+    Скорость менять на клавише + и -
+    ''',
                  bg='#f2ffe0', width=79)
     text.place(x=30, y=10)
     reload_button_img1 = PhotoImage(data=image1_data)
