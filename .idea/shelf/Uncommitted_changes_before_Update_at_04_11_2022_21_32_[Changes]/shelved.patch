@@ -1,0 +1,10 @@
+Index: .idea/.name
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+--- a/.idea/.name	
++++ b/.idea/.name	
+@@ -1,1 +1,1 @@
+-Lab_3(Work with file).py
+\ No newline at end of file
++Lab_4(OOP).py
+\ No newline at end of file
