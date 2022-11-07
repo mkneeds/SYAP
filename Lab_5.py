@@ -94,8 +94,6 @@ def task_3(x, c):
     l = (abs((2 * x - c))) ** (3 / 5) + 0.567
     return l
 
-def task_4():
-    ax = plt.subplots()
 
 def task_4():
     def first_function(a, b):
@@ -166,32 +164,33 @@ def task_4():
 
 
 def main():
-    arr = []
-    print("(Задание 1)Вычислите выражение:")
-    print(task_1(x=0.093, a=0.94 * 10 ** -3))
-    print("(Задание 2)Работа с Pandas и визуализация данных в Matplotlib:")
-    task_2()
-    print("(Задание 3) Визуализация данных в Matplotlib:")
-    index = 0
-    arr_i = []
-    fix, ax = plt.subplots()
-    for i in range(-10, 1):
-        arr.append(task_3(12.1, i))
-        arr_i.append(i)
-        plt.plot(i, arr[index], color='black', marker='s')
-        print(f"Аргумент:{i}\n"
-              f"Значение:{arr[index]}")
-        index += 1
-
-    print(f"Максимальный элемент->{max(arr)}")
-    print(f"Минимальный элемент->{min(arr)}")
-    print(f"Среднее значение массива->{mean(arr)}")
-    print(f"Количество элементов массива->{len(arr)}")
-    s = int(mean(arr))
-    plt.plot(s, s + 1, marker="s")
-    plt.xlabel("Аргумент")
-    plt.ylabel("Значение")
-    plt.show()
+    # arr = []
+    # print("(Задание 1)Вычислите выражение:")
+    # print(task_1(x=0.093, a=0.94 * 10 ** -3))
+    # print("(Задание 2)Работа с Pandas и визуализация данных в Matplotlib:")
+    # task_2()
+    # print("(Задание 3) Визуализация данных в Matplotlib:")
+    # index = 0
+    # arr_i = []
+    # fix, ax = plt.subplots()
+    # for i in range(-10, 1):
+    #     arr.append(task_3(12.1, i))
+    #     arr_i.append(i)
+    #     plt.plot(i, arr[index], color='black', marker='s')
+    #     print(f"Аргумент:{i}\n"
+    #           f"Значение:{arr[index]}")
+    #     index += 1
+    #
+    # print(f"Максимальный элемент->{max(arr)}")
+    # print(f"Минимальный элемент->{min(arr)}")
+    # print(f"Среднее значение массива->{mean(arr)}")
+    # print(f"Количество элементов массива->{len(arr)}")
+    # s = int(mean(arr))
+    # plt.plot(s, s + 1, marker="s")
+    # plt.xlabel("Аргумент")
+    # plt.ylabel("Значение")
+    # plt.show()
+    task_4()
 
 
 if __name__ == "__main__":

@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fea58b8a-7813-421e-b267-85201a78b2bf" name="Changes" comment="LAB">
-      <change beforePath="$PROJECT_DIR$/.idea/SYAP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SYAP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/surname.csv" beforeDir="false" afterPath="$PROJECT_DIR$/surname.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/Lab_4(OOP).py" />
+    </disable_hints>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,6 +37,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Lab_1(Integrate types).py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab_2(Function).py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Lab_4(OOP).py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -196,8 +203,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Lab_5" />
-        <item itemvalue="Python.2" />
         <item itemvalue="Python.Lab_4(OOP)" />
+        <item itemvalue="Python.2" />
         <item itemvalue="Python.Lab_3(Work with file)" />
         <item itemvalue="Python.4" />
       </list>
@@ -213,6 +220,7 @@
       <updated>1663520103658</updated>
       <workItem from="1665842868301" duration="324000" />
       <workItem from="1667148093753" duration="10146000" />
+      <workItem from="1667628263710" duration="962000" />
     </task>
     <task id="LOCAL-00001" summary="G">
       <created>1663536238831</created>
@@ -277,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667586857656</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="LAB">
+      <created>1667588869852</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667588869852</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,5 +316,9 @@
     <MESSAGE value="LAB_4" />
     <MESSAGE value="LAB" />
     <option name="LAST_COMMIT_MESSAGE" value="LAB" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SYAP$Lab_5.coverage" NAME="Lab_5 Coverage Results" MODIFIED="1667629180517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SYAP$Lab_4_OOP_.coverage" NAME="Lab_4(OOP) Coverage Results" MODIFIED="1667628839091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
